@@ -10,3 +10,37 @@
 <div style="text-align: center;">
     <img src="~/imagenes/copo.jpg" alt="Copo" style="max-width: 300px; height: auto; display: block; margin: 0 auto;">
 </div>
+
+<button onclick="mostrarViaje()" style="
+    display: block; 
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: #fff; 
+    background-color: #3fd9d9; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s;
+">Descubre una de sus travesuras</button>
+
+<div id="viajeDiv" style="display: none; text-align: center;">
+    <h2>Un día en el jardín</h2>
+    <article>Recientemente, Copo descubrió el jardín y pasó horas persiguiendo mariposas y explorando las plantas. 
+        Fue un espectáculo ver cómo se movía entre las flores, intentando atrapar todo lo que se movía. 
+        Su curiosidad la llevó a investigar cada rincón del jardín, y terminó regresando a casa cubierta de hojas y tierra, 
+        pero con una expresión de pura felicidad en su rostro.</article>
+    <br>
+    <img src="~/imagenes/copo_aventura.jpg" alt="Copo en el jardín" style="max-width: 300px; height: auto; display: block; margin: 0 auto;">
+</div>
+
+<script>
+    function mostrarViaje() {
+        var viajeDiv = document.getElementById('viajeDiv');
+        if (viajeDiv.style.display === 'none') {
+            viajeDiv.style.display = 'block';
+        } else {
+            viajeDiv.style.display = 'none';
+        }
+    }
+</script>
