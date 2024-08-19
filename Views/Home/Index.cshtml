@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Mis Mascotas</h1>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <img src="~/imagenes/fully.jpg" class="card-img-top" alt="Imagen de Fully">
+                <div class="card-body text-center">
+                    <a asp-controller="Fully" asp-action="Index" class="btn btn-success">Fully</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <img src="~/imagenes/copo.jpg" class="card-img-top" alt="Imagen de Copo">
+                <div class="card-body text-center">
+                    <a asp-controller="Copo" asp-action="Index" class="btn btn-success">Copo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
