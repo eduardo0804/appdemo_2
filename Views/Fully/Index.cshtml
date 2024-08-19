@@ -12,3 +12,37 @@
 <div style="text-align: center;margin-top:20px;">
     <img src="~/imagenes/fully.jpg" alt="Fully" style="max-width: 300px; height: auto; display: block; margin: 0 auto;">
 </div>
+
+<button onclick="mostrarViaje()" style="
+    display: block; 
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: #fff; 
+    background-color: #165a41; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s;
+">Descubre una de mis travesuras</button>
+
+<div id="viajeDiv" style="display: none; text-align: center;">
+    <h2>Una travesura inolvidable</h2>
+    <article>Una vez, Fully decidió explorar el interior de una caja de galletas que había quedado abierta. 
+        A pesar de lo pequeño del espacio, logró meterse por completo y se quedó atrapado. Fue un momento 
+        divertido cuando lo encontramos, todo cubierto de migajas, mirando como si nada hubiera pasado. 
+        Esa travesura es solo una de las tantas que nos hace sonreír día a día.</article>
+    <br>
+    <img src="~/imagenes/fully_aventura.jpg" alt="Fully travesura" style="max-width: 300px; height: auto; display: block; margin: 0 auto;">
+</div>
+
+<script>
+    function mostrarViaje() {
+        var viajeDiv = document.getElementById('viajeDiv');
+        if (viajeDiv.style.display === 'none') {
+            viajeDiv.style.display = 'block';
+        } else {
+            viajeDiv.style.display = 'none';
+        }
+    }
+</script>
